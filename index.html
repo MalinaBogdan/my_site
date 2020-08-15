@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Rhea</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="script/place-script.js"></script>
+    <script src="script/video-script.js"></script>
+    <script src="script/avatar-script.js"></script>
+    <div class="container">
+      <div class="row">
+        <img src="img/logo.png" class="logo" alt="" />
+
+        <div class="col-12 menu-block">
+          <nav class="menu menu-blue">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
+            </ul>
+            <button class="btn-white" type="submit">
+              Sign in
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div class="text-wrap">
+              <h2 class="text-h2-header">Travel around the world</h2>
+              <p class="text-p">
+                Plan and book your perfect trip with expert advice, travel tips,
+                destination information and inspiration from us.
+              </p>
+              <button class="btn-sign-up" type="submit">
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/bg-header.png" class="bg-header" alt="" />
+    </header>
+    <section class="price-container">
+      <div class="price-gallery">
+        <div class="img-block" id="end"></div>
+        <div class="img-wrap-active">
+          <div class="img-block-active" id="main"></div>
+          <div class="price-block">
+            <p class="price-text"></p>
+          </div>
+          <div class="place-name-wrap">
+            <p class="place-name"></p>
+          </div>
+          <div class="star-wrap">
+            <img src="img/star-off.png" alt="" class="img-star" />
+            <img src="img/star-off.png" alt="" class="img-star" />
+            <img src="img/star-off.png" alt="" class="img-star" />
+            <img src="img/star-off.png" alt="" class="img-star" />
+            <img src="img/star-off.png" alt="" class="img-star" />
+          </div>
+          <p class="amount-days"></p>
+        </div>
+        <div class="img-block" id="start"></div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-5">
+            <div class="text-wrap-right">
+              <h2 class="text-h4">Amazing places to enjoy your travel</h2>
+              <div class="blue-line"></div>
+              <p class="text-p">
+                Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
+                dui, varius vehicula ligula nulla sit amet lorem. Aenean in
+                vestibulum quam. Cras commodo varius neque, non gravida diam
+                ultrices nec. Cras nulla mauris, fermentum nec libero in.
+              </p>
+              <button class="btn-explore" type="submit">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-wrap">
+        <button class="arrow-left"></button>
+        <button class="arrow-right"></button>
+      </div>
+    </section>
+    <section class="video-container container">
+      <div class="text-video-wrap col-12">
+        <h2>Featured videos</h2>
+        <div class="blue-line-center justify-content-end"></div>
+        <p>
+          Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend
+          malesuada magna, at imperdiet justo euismod eu. Aliquam vel imperdet
+          mi, et convallis eros. Duis fermentum fringilla nisl at vulputate.
+          Nunc nec lorem faucibus, molestie nisi id, elementum sem. Sed
+          vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis
+          et arcu.
+        </p>
+        <div class="row">
+          <div class="main-video-block col-8">
+            <iframe
+              class="main-video"
+              src="https://www.youtube.com/embed/n9orHWu8zQA"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="videos-block col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="travellers-container container">
+      <div class="col-12">
+        <div class="text-video-wrap">
+          <h2>Traveller’s experiences</h2>
+          <div class="blue-line-center justify-content-end"></div>
+          <p>
+            “Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum
+            leo, at faucibus enim aliquam eu. Nullam quis pulvinar diam, ac
+            elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut
+            elit elit, fringilla a nisi ut, dapibus eleifend quam.”
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="travellers-block col-12">
+          <button class="travellers-button-left"></button>
+          <div class="avatar-wrap">
+            <img src="img/avatar01.png" alt="" class="avatar" />
+            <p class="name"></p>
+            <p class="position"></p>
+          </div>
+          <button class="travellers-button-right"></button>
+        </div>
+        <div class="blue-lines-wrap"></div>
+      </div>
+    </section>
+    <section class="form-container">
+      <div class="form-text-wrap">
+        <h4>We will se you</h4>
+        <h2>Enjoy 30% Off On First Trip</h2>
+      </div>
+      <div class="form-group-wrap">
+        <div class="form-group">
+          <select class="select">
+            <option>Destinations</option>
+            <option>Destinations2</option>
+            <option>Destinations3</option>
+            <option>Destinations4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="select">
+            <option>Package</option>
+            <option>Package2</option>
+            <option>Package3</option>
+            <option>Package4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="date" class="select" />
+        </div>
+        <div class="form-group">
+          <button class="btn-form" type="submit">
+            Book now
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>

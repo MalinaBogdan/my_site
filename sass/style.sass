@@ -1,0 +1,581 @@
+@import variables
+@import extends
+@import media
+
+.logo
+  @extend %position-top-left
+  width: 200px
+  height: 60px
+  margin: 0 auto
+  margin-top: 3vh
+  margin-left: 10vw
+
+  @include _782
+    width: 100px
+    height: 30px
+    margin-top: 50px
+    margin-left: 0 auto
+
+.menu-block
+  height: 10vh
+  position: relative
+
+  @include _782
+    margin: 0 auto
+
+  nav
+    margin: 5vh 0 0 0 auto
+
+    ul
+      @extend %position-bottom-right
+      padding-left: 40vw
+      width: 100%
+
+      @include _1012
+        padding-left: 20vw
+
+      @include _956
+        padding-left: 30vw
+
+      @include _782
+        padding-left: 35vw
+
+      @include _600
+        margin: 23px 70px
+
+      a
+        color: $grey-color
+        outline: 0 !important
+
+      a:hover
+        color: $blue-color
+
+    button
+      @extend %position-bottom-right
+      @extend %btn-white
+      width: 120px
+      height: 40px
+
+      @include _782
+        display: none
+
+    button:hover
+      @extend %btn-blue
+
+.header
+  width: 100vw
+  height: 90vh
+
+  @include _1012
+    height: 80vh
+
+  @include _782
+    height: 50vh
+
+  .text-wrap
+    @extend %position-0
+    padding-top: 15vh
+    height: 60vh
+
+    @include _782
+      padding-top: 3vh
+
+    h2
+      font-size: 75px
+
+      @include _1276
+        font-size: 50px
+
+      @include _782
+        font-size: 30px
+
+    p
+      padding: 30px 0
+      font-size: 22px
+
+    button
+      width: 150px
+      height: 50px
+      @extend %btn-blue
+
+    button:hover
+      @extend %btn-white
+
+  .bg-header
+    @extend %position-top-right
+    margin: 15vh 0 0 0
+    width: 45vw
+
+    @include _1276
+      position: absolute
+      margin: 30vh 0 0 0
+
+    @include _1012
+      position: absolute
+      margin: 25vh 0 0 0
+
+.price-container
+  position: relative
+  width: 100vw
+  height: 90vh
+
+  @include _1276
+    height: 55vw
+
+  .price-gallery
+    margin-left: -10vw
+    width: 90vw
+    height: 70vh
+    position: absolute
+
+    @include _1276
+      width: 70vw
+
+  .img-block
+    display: inline-block
+    margin-top: 60px
+    width: 300px
+    height: 450px
+
+    @include _1276
+      width: 200px
+      height: 300px
+
+    @include _1012
+      width: 150px
+      height: 225px
+
+    @include _782
+      width: 120px
+      height: 170px
+
+  .img-wrap-active
+    position: relative
+    display: inline-block
+    margin: 0 30px
+    width: 300px
+    height: 500px
+
+    @include _1276
+      width: 200px
+      height: 350px
+
+    @include _1012
+      width: 150px
+      height: 250px
+
+    @include _782
+      margin: 0 10px
+      width: 120px
+      height: 200px
+
+    .img-block-active
+      width: 100%
+      height: 450px
+
+      @include _1276
+        height: 300px
+
+      @include _1012
+        width: 150px
+        height: 225px
+
+      @include _782
+        width: 120px
+        height: 170px
+
+    .price-block
+      @extend %position-top
+      margin-top: 20px
+      width: 80px
+      height: 30px
+      background-color: $blue-color
+
+      @include _782
+        width: 40px
+        height: 20px
+
+      p
+        font-size: 20px
+        color: white
+
+        @include _782
+          font-size: 10px
+
+    .place-name-wrap
+      @extend %position-bottom-left
+      margin: 0 0 60px 15px
+      width: 100%
+      height: 30px
+
+      @include _1012
+        margin: 0 0 15px 0px
+
+      @include _782
+        margin: 0 0 25px 5px
+
+      p
+        text-align: left
+        font-size: 20px
+        color: white
+
+        @include _1276
+          font-size: 15px
+
+        @include _1012
+          font-size: 12px
+
+    .star-wrap
+      @extend %position-bottom
+      width: 100%
+      height: 25px
+      margin-bottom: 15px
+
+      @include _1276
+        margin-bottom: 23px
+        width: 100%
+        height: 25px
+
+      @include _1012
+        margin-bottom: 0px
+        width: 100%
+        height: 25px
+
+      @include _782
+        margin-bottom: 20px
+        width: 100%
+        height: 7px
+
+      img
+        display: inline-block
+        background-size: cover
+        margin-bottom: 10px
+        width: 22px
+        height: 22px
+
+        @include _1276
+          margin-bottom: 10px
+          width: 10px
+          height: 10px
+
+        @include _1276
+          margin-bottom: 0px
+          width: 10px
+          height: 10px
+
+        @include _782
+          margin-bottom: 200px
+          width: 7px
+          height: 7px
+
+    p
+      font-size: 25px
+      text-align: right
+
+      @include _1276
+        font-size: 15px
+
+      @include _1276
+
+        font-size: 12px
+
+      @include _782
+        font-size: 7px
+
+  .text-wrap-right
+    @extend %position-0
+    padding: 60px 0 0 130px
+    height: 70vh
+
+    @include _1276
+      padding: 30px 0 0 0px
+
+    @include _1012
+      padding: 30px 0 0 0px
+
+    h2
+      @include _1012
+        font-size: 20px
+
+      @include _782
+        font-size: 15px
+
+    p
+      @include _782
+        font-size: 10px
+
+    .blue-line
+      @extend %blue-line
+
+      @include _782
+        margin-top: 20px
+        margin-bottom: 20px
+
+    button
+      @extend %btn-blue
+      width: 150px
+      height: 50px
+
+    button:hover
+      @extend %btn-white
+
+  .arrow-wrap
+    @extend %position-bottom
+    margin: 0 0 80px 100px
+
+    @include _1276
+      margin: 0 0 100px 100px
+
+    @include _1012
+      margin: 0 0 90px 100px
+
+    @include _782
+      margin: 0 0 80px 100px
+
+    @include _782
+      margin: 0 0 30px 80px
+
+    .arrow-left
+      width: 45px
+      height: 32px
+      border: none
+      background-color: white
+      background-image: url(../img/arrow-left.png)
+      background-repeat: no-repeat
+      outline: 0 !important
+
+    .arrow-right
+      width: 40px
+      height: 32px
+      border: none
+      background-color: white
+      background-image: url(../img/arrow-right.png)
+      background-repeat: no-repeat
+      outline: 0 !important
+
+.video-container
+  width: 100vw
+  height: 100vh
+
+  @include _1276
+    height: 70vh
+
+  @include _1012
+    height: 55vh
+
+  .text-video-wrap
+    text-align: center
+
+    .blue-line-center
+      @extend %blue-line
+
+    .main-video-block
+      margin-top: 50px
+      width: 100%
+      height: 56vh
+
+      @include _1276
+        height: 35vh
+
+      @include _1012
+        height: 37vh
+
+      @include _782
+        height: 20vh
+
+    .main-video
+      width: 100%
+      height: 100%
+
+    .videos-block
+      margin-top: 50px
+      width: 100%
+      height: 56vh
+      overflow-y: scroll
+
+      @include _1276
+        height: 35vh
+
+      @include _1012
+        height: 37vh
+
+      @include _782
+        height: 20vh
+
+      .video-string
+        position: relative
+        margin-bottom: 15px
+        width: 100%
+        height: 15vh
+        background-color: white
+
+        @include _1276
+          height: 7vh
+
+        @include _1012
+          height: 5vh
+
+        @include _782
+          height: 3vh
+
+        img
+          @extend %position-left
+          width: 40%
+          height: 12vh
+          margin: 1.5vh 10px
+
+          @include _1276
+            height: 7vh
+
+          @include _1012
+            height: 5vh
+
+          @include _782
+            height: 3vh
+
+        h6
+          @extend %position-left
+          text-align: left
+          margin: 20px 0 0 50%
+
+          @include _1276
+            font-size: 10px
+
+          @include _1012
+            font-size: 7px
+
+          @include _782
+            font-size: 5px
+
+        p
+          @extend %position-bottom-left
+          font-size: 12px
+          margin: 20px 0 0 50%
+
+          @include _1012
+            font-size: 7px
+
+          @include _782
+            display: none
+
+      .video-string:hover
+        background-color: $grey-color
+
+.travellers-container
+  text-align: center
+  margin-top: 100px
+  width: 100%
+  height: 100vh
+
+  @include _1276
+    height: 70vh
+
+  .text-video-wrap
+    padding: 0 100px
+
+    @include _782
+      padding: 0 10px
+
+  .travellers-block
+    margin-top: 50px
+
+    .avatar-wrap
+      display: inline-block
+      width: 300px
+      height: 300px
+
+      .avatar
+        width: 100px
+        height: 100px
+
+      p
+        margin-top: 25px
+        font-size: 24px
+
+    .travellers-button-left
+      @extend %position-left
+      width: 45px
+      height: 32px
+      border: none
+      margin: 100px 300px
+      background-color: white
+      background-image: url(../img/arrow-left.png)
+      background-repeat: no-repeat
+      outline: 0 !important
+
+      @include _1012
+        margin: 100px 200px
+
+      @include _782
+        margin: 100px 100px
+
+    .travellers-button-right
+      @extend %position-right
+      width: 45px
+      height: 32px
+      border: none
+      margin: 100px 300px
+      background-color: white
+      background-image: url(../img/arrow-right.png)
+      background-repeat: no-repeat
+      outline: 0 !important
+
+      @include _1012
+        margin: 100px 200px
+
+      @include _782
+        margin: 100px 100px
+
+  .blue-lines-wrap
+    width: 100%
+    min-height: 20px
+
+    .line
+      display: inline-block
+      width: 50px
+      height: 5px
+      margin: 5px
+      background-color: #d4daf5
+
+.form-container
+  width: 100%
+  height: 80vh
+  background-image: url(../img/bg-main.png)
+  background-size: cover
+  padding: 0 100px
+
+  .form-text-wrap
+    text-align: center
+    color: white
+    padding-top: 200px
+
+    @include _600
+      padding-top: 100px
+
+  .form-group-wrap
+    text-align: center
+    padding-top: 50px
+
+    .form-group
+      display: inline-block
+      border-radius: 0
+      width: 250px
+      height: 50px
+      margin: 20px 15px
+
+      .select
+        border: none
+        padding: 10px
+        border-radius: 50
+        background: rgba( 255,255,255,.33)
+        width: 250px
+        height: 50px
+        color: white
+
+      button
+        @extend %btn-blue
+        width: 250px
+        height: 50px
+
+      button:hover
+        @extend %btn-white
